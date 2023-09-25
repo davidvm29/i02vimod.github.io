@@ -11,7 +11,7 @@ permalink: /
 <details>
   <summary>Menú</summary>
   <ul>
-    <li><a href="/uco/acerca">Acerca de</a></li>
-    <li><a href="/uco/programas">Programas Académicos</a></li>
+    <li><a href="acerca">Acerca de</a></li>
+    <li><a href="programas">Programas Académicos</a></li>
   </ul>
 </details>

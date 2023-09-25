@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/script.js"></script>
   
 </head>
 <body>
   <div class="top-bar">
     <div class="search-bar">
-      <img src="{{ site.baseurl }}/assets/img/lupa.png" alt="Lupa" class="search-icon">
+      <img src="/assets/img/lupa.png" alt="Lupa" class="search-icon">
       <input type="text" class="search-input" placeholder="Buscar...">
       <button class="search-button" onclick="search()">Buscar</button>
     </div>
@@ -21,8 +21,8 @@
   </div>
   <!-- Botones de enlace a páginas externas -->
   <div class="external-buttons">
-    <a href="URL_de_la_pagina_1"><img src="{{ site.baseurl }}/assets/img/botonUco.png" alt="Botón 1"></a>
-    <a href="URL_de_la_pagina_2"><img src="{{ site.baseurl }}/assets/img/botonEuropa.png" alt="Botón 2"></a>
+    <a href="URL_de_la_pagina_1"><img src="/assets/img/botonUco.png" alt="Botón 1"></a>
+    <a href="URL_de_la_pagina_2"><img src="/assets/img/botonEuropa.png" alt="Botón 2"></a>
   </div>
   <main>
     {{ content }}
