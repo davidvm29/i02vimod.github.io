@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.top-bar {
+    background-color:#012954; /* Elimina el fondo azul */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.language-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.language-button {
+    background-color: #012954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea a la derecha */
+    border-radius: 0px;
+    padding: 2px;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
+
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 2px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #000; /* Cambia el color del texto a negro */
+    border-bottom: 2px solid #012954; /* Línea inferior para la entrada */
+}
+
+.search-button {
+    background-color: #012954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.external-buttons {
+      display: flex;
+      justify-content: space-between; /* Distribuye los botones al extremo izquierdo y derecho */
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+.external-buttons img {
+      max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
+      height: auto; /* Esto mantiene la proporción de la imagen */
+      margin: 0 10px; /* Pequeño margen horizontal entre las imágenes */
+    }
