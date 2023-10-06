@@ -1,115 +1,83 @@
 body {
-  margin: 20px;
+  margin: 0;
   padding: 0;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Estilo para encabezados */
+/* Agrega estilos para el título principal */
 h1 {
   text-align: center;
   font-size: 36px;
-  font-weight: bold;
-  color: #004080; /* Color azul oscuro */
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
-
-/* Estilo para h2 */
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #0066cc; /* Color azul para los h2 */
-  margin-bottom: 15px;
-}
-
-
-/* Estilo para párrafos */
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333; /* Color gris oscuro */
-  margin-bottom: 20px;
-}
-
-/* Estilo para enlaces */
-a {
-  color: #0066cc; /* Color azul para los enlaces */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline; /* Subrayar los enlaces al pasar el mouse sobre ellos */
-}
-
 
 .top-bar {
-  background-color: #012954;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
-  color: #fff;
+    
+    background-color:#012954; /* Elimina el fondo azul */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    color: #fff;
 }
 
 .language-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea a la derecha */
 }
 
 .language-button {
-  background-color: #012954;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 15px;
-  font-size: 15px;
-  margin-right: 10px;
-  cursor: pointer;
+    background-color: #012954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
-  border-radius: 0px;
-  padding: 2px;
-  background-color: #012954; /* Cambia el fondo de la barra de búsqueda */
-  color: #000; /* Texto blanco */
-  margin-right: 20px;
-}
 
-.search-link {
-  color: #ffffff; /* Color del enlace */
-  text-decoration: none;
-  margin-right: 0px; /* Espaciado entre el enlace y la lupa */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea a la derecha */
+    border-radius: 0px;
+    padding: 2px;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
 }
 
 .search-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 1px; /* Espaciado entre la lupa y el campo de búsqueda */
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
+
 }
 
 .search-input {
-  flex-grow: 1;
-  border: none;
-  padding: 2px;
-  font-size: 18px;
-  background-color: transparent;
-  color: #000000; /* Texto blanco */
-  border-bottom: 2px solid #fff; /* Línea inferior blanca para la entrada */
+    flex-grow: 1;
+    border: none;
+    padding: 2px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #000; /* Cambia el color del texto a negro */
+    border-bottom: 2px solid #012954; /* Línea inferior para la entrada */
 }
 
 .search-button {
-  background-color: #012954;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 10px;
+    background-color: #012954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 .external-buttons {

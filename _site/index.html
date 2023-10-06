@@ -2,40 +2,107 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Inicio</title>
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="/assets/js/script.js"></script>
-  
 </head>
 <body>
-  <div class="top-bar">
-    <div class="search-bar">
-      <img src="/assets/img/lupa.png" alt="Lupa" class="search-icon">
-      <input type="text" class="search-input" placeholder="Buscar...">
-      <button class="search-button" onclick="search()">Buscar</button>
+  <div class="container-fluid">
+    <div class="row top-bar justify-content-end">
+        <div class="col-md-4 search-bar">
+            <img src="/assets/img/lupa.png" alt="Lupa" class="search-icon">
+            <input type="text" class="form-control search-input" placeholder="">
+            <button class="btn btn-primary search-button" onclick="search()">Buscar</button>
+        </div>
+        <div class="col-md-2 language-buttons text-right">
+            <button class="btn btn-secondary language-button" onclick="changeLanguage('EN')">EN</button>
+            <button class="btn btn-secondary language-button" onclick="changeLanguage('ES')">ES</button>
+        </div>
     </div>
-    <div class="language-buttons">
-      <button class="language-button" onclick="changeLanguage('EN')">EN</button>
-      <button class="language-button" onclick="changeLanguage('ES')">ES</button>
-    </div>
-  </div>
+</div>
+
+
   <!-- Botones de enlace a páginas externas -->
   <div class="external-buttons">
-    <a href="URL_de_la_pagina_1"><img src="/assets/img/botonUco.png" alt="Botón 1"></a>
-    <a href="URL_de_la_pagina_2"><img src="/assets/img/botonEuropa.png" alt="Botón 2"></a>
+    <a href="/index.html"><img src="/assets/img/botonUco.png" alt="Botón 1"></a>
+    <a href="/acerca.html"><img src="/assets/img/botonEuropa.png" alt="Botón 2"></a>
+
   </div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/img/slide1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/slide2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/slide3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Menú desplegable -->
+  <div class="dropdown">
+    <div class="dropdown-title">
+      <span class="dropdown-text">Menu</span>
+      <span class="dropdown-icon" onclick="toggleDropdown()">☰</span>
+    </div>
+    <div id="mainDropdown" class="dropdown-content">
+      <a href="#">opcion1</a>
+      <a href="#">opcion2</a>
+      <a href="#" onclick="toggleSubDropdown(this)">Opción 3</a>
+      <div class="sub-dropdown-content">
+        <a href="#">Subopción 1</a>
+        <a href="#">Subopción 2</a>
+      </div>
+    </div>
+  </div>
+
   <main>
-    <h2 id="bienvenido-a-la-universidad-de-córdoba">Bienvenido a la Universidad de Córdoba</h2>
+    <h1 id="bienvenido-a-la-universidad-de-córdoba-uco-">Bienvenido a la Universidad de Córdoba (UCO) 🎓</h1>
 
-<p>¡Explora nuestra institución académica líder en educación!</p>
+<p>Explora un mundo de conocimiento y descubre tu potencial en la Universidad de Córdoba (UCO). Fundada en [año de fundación], la UCO se dedica a la excelencia académica, la investigación innovadora y el compromiso con la comunidad.</p>
 
-<details>
-  <summary>Menú</summary>
-  <ul>
-    <li><a href="acerca">Acerca de</a></li>
-    <li><a href="programas">Programas Académicos</a></li>
-  </ul>
-</details>
+<h2 id="acerca-de-la-uco">Acerca de la UCO</h2>
+
+<p>La UCO es una institución educativa líder que ofrece una amplia gama de programas académicos, desde ciencias hasta humanidades y artes. Nuestros profesores son expertos en sus campos y están dedicados a inspirar y guiar a los estudiantes hacia el éxito.</p>
+
+<h2 id="nuestros-programas-destacados">Nuestros Programas Destacados</h2>
+
+<ul>
+  <li>Licenciatura en Desarrollo de software</li>
+  <li>Maestría en Ingeniería Civil</li>
+  <li>Doctorado en Ciencias de la Computación</li>
+</ul>
+
+<h2 id="enlaces-de-interés">Enlaces de Interés</h2>
+
+<ul>
+  <li><a href="https://www.uco.es">Sitio Web Oficial de la UCO</a></li>
+  <li><a href="https://www.uco.es/estudios">Programas Académicos</a></li>
+  <li><a href="https://www.uco.es/investigacion">Investigación en la UCO</a></li>
+  <li><a href="https://www.uco.es/vida-universitaria">Vida del Campus</a></li>
+</ul>
+
+<p>¡Explora nuestras páginas para conocer más sobre la emocionante experiencia educativa que ofrecemos en la Universidad de Córdoba!</p>
+
+<p>¿Tienes alguna pregunta o deseas saber más sobre nuestros programas? No dudes en <a href="https://www.uco.es/contacto">contactarnos</a>. Estamos aquí para ayudarte en tu viaje educativo.</p>
 
   </main>
 
@@ -45,10 +112,31 @@
     </div>
   </div>
 
-  <!-- Botones de enlace a páginas externas -->
-  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/assets/img/logoUco.png" alt="Logo">
+      </div>
+      <div class="footer-info">
+        <p>Universidad de Córdoba</p>
+        <p>Dirección: Calle Ejemplo, 123</p>
+        <p>Teléfono: +123 456 789</p>
+        <p>Email: info@universidad.com</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="/assets/img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="/assets/img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="/assets/img/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
+
+
+
 
 
 
