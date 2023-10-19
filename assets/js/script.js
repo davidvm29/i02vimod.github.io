@@ -53,6 +53,23 @@ function toggleDropdown() {
     });
   });
   
+
+
+$(document).ready(function(){
+  // Establece el intervalo de cambio de imágenes en milisegundos (3 segundos = 3000 ms)
+  var intervalo = 3000;
   
+  // Inicializa el carrusel
+  $('#carouselExample').carousel();
+  
+  // Función para avanzar a la siguiente diapositiva
+  function avanzarDiapositiva() {
+      $('#carouselExample').carousel('next');
+  }
+  
+  // Establece el intervalo de cambio de imágenes
+  setInterval(avanzarDiapositiva, intervalo);
+});
+
   
   

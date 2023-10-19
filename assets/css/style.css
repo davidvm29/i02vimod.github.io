@@ -23,6 +23,77 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* Estilos para el h3 */
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: start;
+  letter-spacing: normal;
+  color: #575756;
+  font-weight: bold;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a medida que el contenedor se reduce */
+  margin-top: 0; /* Espaciado superior del contenedor */
+  background-color: #f0f0f0; /* Color de fondo del contenedor */
+}
+
+
+.centrado span {
+  line-height: 20px;
+  display: block;
+  font-family: 'Montserrat',sans-serif;
+  height: 70px;
+  width: 203px;
+  font-size: 20px; /* Tamaño de texto base */
+  padding: 15px 30px 15px 30px; /* Espaciado interno de los elementos span */
+  margin: 1px; /* Margen entre los elementos span para separarlos */
+  background-color: #e09f4e;
+  color:#ffffff;
+  position: relative; /* Color de fondo del span */
+  cursor: pointer;
+}
+
+.item a span {
+  line-height: 20px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  height: 70px;
+  width: 203px;
+  font-size: 20px;
+  padding: 15px 30px; /* Ajusté el espaciado interno para mantener la relación de aspecto */
+  margin: 1px;
+  background-color: #e09f4e;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  text-align: center; /* Alineación del texto al centro */
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.item a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+/* Estilo cuando se pasa el mouse sobre el span */
+.item a span:hover {
+  background-color: #d18b47;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilo para párrafos */
 p {
@@ -32,84 +103,124 @@ p {
   margin-bottom: 20px;
 }
 
-/* Estilo para enlaces */
-a {
-  color: #0066cc; /* Color azul para los enlaces */
-  text-decoration: none;
+.container-fluid{
+  padding: 10px;
 }
 
-a:hover {
-  text-decoration: underline; /* Subrayar los enlaces al pasar el mouse sobre ellos */
-}
 
 
 .top-bar {
-  background-color: #012954;
+  background-color: #221c35;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 0px 0px;
   color: #fff;
 }
 
-.language-buttons {
+
+
+
+.language-buttons{
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: flex-end;
+
 }
 
-.language-button {
-  background-color: #012954;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 15px;
-  font-size: 15px;
-  margin-right: 10px;
-  cursor: pointer;
-}
 
 .search-bar {
   display: flex;
   align-items: center;
   border-radius: 0px;
   padding: 2px;
-  background-color: #012954; /* Cambia el fondo de la barra de búsqueda */
-  color: #000; /* Texto blanco */
-  margin-right: 20px;
+  background-color: #221c35; /* Cambia el fondo de la barra de búsqueda */
+  color: #ffffff; /* Texto blanco */
+  margin-right: 0px;
+  justify-content: flex-end;
+  margin-bottom: 0%;
 }
-
-.search-link {
-  color: #ffffff; /* Color del enlace */
-  text-decoration: none;
-  margin-right: 0px; /* Espaciado entre el enlace y la lupa */
+@media (max-width: 992px) {
+  .search-bar,
+  .language-buttons {
+      flex: 0 0 100%; /* Cambia a una columna completa en dispositivos medianos */
+  }
+}
+.search-container{
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  justify-content: flex-start;
 }
 
 .search-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 1px; /* Espaciado entre la lupa y el campo de búsqueda */
+  background-color: #ffffff;
+  background-image: url('../img/boton-lupa.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 25px; /* Establece el ancho del botón */
+  height: 25px; /* Establece la altura del botón */
+  margin-right: 10px; /* Espaciado entre la lupa y el campo de búsqueda */
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  overflow: clip;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el botón */
 }
 
+
 .search-input {
-  flex-grow: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
   border: none;
-  padding: 2px;
-  font-size: 18px;
-  background-color: transparent;
-  color: #000000; /* Texto blanco */
-  border-bottom: 2px solid #fff; /* Línea inferior blanca para la entrada */
+  padding: 0 10px 0 10px;
+  line-height: 20px;
+  height: 19.99922px;
+  width:109.992px;
+  border: 2px inset #767676;
+  box-sizing: border-box;
+  text-decoration: none solid rgb(17, 17, 17);
+  background-color: #ffffff;
+  color: #111111;
+  text-align: start;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  display: inline-block;
+  margin-right: 5px;
+
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+      flex-direction: column; /* Cambia la dirección del flujo a vertical */
+  }
+
+  .search-bar {
+      margin-bottom: 10px; /* Espaciado entre la barra de búsqueda y los botones de idioma */
+  }
 }
 
 .search-button {
-  background-color: #012954;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 1px;
+    text-decoration: none solid rgb(255,255,255);
+    text-align: center;
+    vertical-align: middle;
+    white-space: pre;
+    word-spacing: 0px;
+    letter-spacing: normal;
+    color: #ffffff;
+    background-color: #221c35;
+    width: 49px;
+    height: 19px;
+    border: 2px outset #767676;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left:0 ;
+    margin-right: 0px;
 }
 
 .external-buttons {
@@ -267,29 +378,206 @@ a:hover {
   background-color: #012954; /* Color del dot activo */
 }
 
-/* Estilos para las flechas de navegación */
-/* Estilos para las flechas de navegación */
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  font-size: 30px;
-  cursor: pointer;
-  color: #012954; /* Cambia el color de las flechas */
-}
-
-.slick-prev {
-  left: 20px;
-}
-
-.slick-next {
-  right: 20px;
-}
 
 .markdown-content {
   margin-bottom: 20px; /* Agrega un margen inferior al contenido Markdown */
 }
 
-/* ... (código posterior) ... */
+#carouselExampleIndicators {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+
+#carouselExample .carousel-indicators li {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 1px solid #949494;
+  opacity: 1;
+}
+
+#carouselExample .carousel-indicators li.active {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+/* Estilos para las secciones personalizadas */
+.custom-section {
+  width: 100%;
+  max-width: 1209px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom:0;
+}
+
+
+
+/* Estilos para las columnas personalizadas */
+.custom-col {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes dentro de las secciones */
+.custom-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media query para dispositivos pequeños (hasta 768px) */
+@media (max-width: 768px) {
+  .custom-col {
+    flex: 0 0 100%;
+  }
+}
+
+.image-caption {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.image-caption a {
+  color: #575756;
+  text-decoration: none;
+}
+
+.custom-section {
+  margin-bottom: 5px; /* Puedes ajustar este valor según sea necesario */
+}
+
+#noticias {
+  margin-top: 0px; /* Puedes ajustar este valor según sea necesario */
+}
+
+
+
+#idiomas {
+  list-style-type: none; /* Quita el punto de la lista */
+  margin: 0;
+  padding: 0;
+}
+
+#idiomas li {
+  display: inline;
+  margin-right: 1px; /* Espacio entre los elementos de la lista */
+}
+
+#idiomas li:last-child {
+  margin-right: 0; /* Elimina el espacio a la derecha del último elemento */
+}
+
+
+
+.Boton-ingles a, .Boton-espayol a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  padding: 0.5px;
+  margin-right: 0px; /* Ajusta el espacio interno para los enlaces */
+}
+
+.Boton-espayol a{
+  text-align: right;
+  height: auto;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-right: 1px solid #ffffff;
+  display: inline;
+}
+
+.menu-footer{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #ffffff;
+  height: 61px;
+  width: 668.5px;
+  display: inline-block;
+}
+
+.icon-facebook,.icon-twitter,.icon-linkedin,.icon-rss,.icon-flickr,.icon-youtube,.icon-instagram,.icon-tiktok{
+  background-position: 50% 0%;
+  height: 24px;
+  width: 24px;
+  display:block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.icon-facebook{
+  background-image: url('/assets/img/asset32.png');
+}
+
+.icon-twitter{
+ background-image: url('/assets/img/asset\ 33.png');
+}
+
+.icon-linkedin{
+  background-image: url('/assets/img/asset\ 34.png');
+}
+.icon-rss{
+  background-image: url('/assets/img/asset\ 35.png');
+}
+
+.icon-flickr{
+  background-image: url('/assets/img/asset\ 36.png');
+}
+
+.icon-youtube{
+  background-image: url('/assets/img/asset\ 37.png');
+}
+.icon-instagram{
+  background-image: url('/assets/img/asset\ 38.png');
+}
+.icon-tiktok{
+  background-image: url('/assets/img/asset\ 39.png');
+}
+
+.redes-sociales {
+  height: 44px;
+  width: 240px;
+  margin: 0 0 10px 0;
+  padding: 20px 0 0 0;
+  min-height: 24px;
+  display: inline;
+  color: #333333;
+}
+
+.redes-sociales li {
+  display: inline-block; /* Mostrar los elementos de lista en línea */
+  margin-right: 10px; /* Espacio entre los elementos de la lista */
+  list-style: none; /* Eliminar los puntos de la lista */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
