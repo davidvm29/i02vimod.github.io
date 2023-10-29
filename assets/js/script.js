@@ -71,5 +71,96 @@ $(document).ready(function(){
   setInterval(avanzarDiapositiva, intervalo);
 });
 
-  
+(function($) {
+  $.fn.menumaker = function(options) {
+    var cssmenu = $(this),
+      settings = $.extend({
+        title: "Menú",
+        format: "multitoggle"
+      }, options);
+
+    var resizeFix = function() {
+      if ($(window).width() > 1200) {
+        cssmenu.find('ul').show();
+        cssmenu.find('.has-sub > ul').show();
+        $('#menu-button').css('display', 'none');
+      } else {
+        cssmenu.find('ul').css('display', 'block');
+        cssmenu.find('.has-sub > ul').css('display', 'none');
+        $('#menu-button').css('display', 'block');
+      }
+    };
+
+    $(window).on('resize', resizeFix);
+    resizeFix();
+
+    $(this).find("#menu-button").on('click', function() {
+      cssmenu.find('ul').css('display', 'block');
+      cssmenu.find('.has-sub > ul').css('display', 'none');
+      $(this).toggleClass('menu-opened');
+      var mainmenu = $(this).next('ul');
+      if (mainmenu.hasClass('open')) {
+        mainmenu.removeClass('open').hide();
+      } else {
+        mainmenu.addClass('open').show();
+      }
+    });
+
+    cssmenu.find('li ul').parent().addClass('has-sub');
+
+    var multiTg = function() {
+      cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+      cssmenu.find('.submenu-button').on('click', function() {
+        $(this).toggleClass('submenu-opened');
+        if ($(this).siblings('ul').hasClass('open')) {
+          $(this).siblings('ul').removeClass('open').hide();
+        } else {
+          $(this).siblings('ul').addClass('open').show();
+        }
+      });
+    };
+
+    if (settings.format === 'multitoggle') multiTg();
+    else cssmenu.addClass('dropdown');
+  };
+})(jQuery);
+
+$(document).ready(function() {
+  if ($('#titulo h1').length) {
+    var margen = ($('#titulo h1').height() - $('#titulo h1 span').height()) / 2;
+    $('#titulo h1 span').css('margin-top', margen + 'px');
+    $(window).resize(function() {
+      var margen = ($('#titulo h1').height() - $('#titulo h1 span').height()) / 2;
+      $('#titulo h1 span').css('margin-top', margen + 'px');
+    });
+
+    if ($("#menu-principal").length) {
+      $("#menu-principal").menumaker({
+        title: "Menú",
+        format: "multitoggle"
+      });
+    }
+  } else {
+    cargarMenu();
+  }
+});
+
+function cargarMenu() {
+  if ($("#menu-principal").length) {
+    $("#menu-principal").menumaker({
+      title: "Menú",
+      format: "multitoggle"
+    });
+  } else {
+    setTimeout(function() {
+      cargarMenu();
+    }, 2000);
+  }
+}
+
+
+
+
+
+
   
