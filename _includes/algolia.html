@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algolia Search</title>
+  <!-- Agrega los scripts y estilos de Algolia -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+</head>
+<body>
+  <input type="text" id="search-input" placeholder="Buscar...">
+  <div id="search-hits"></div>
+
+  <!-- Agrega los scripts de Algolia y tu configuración personalizada -->
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.7.0/dist/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.production.min.js"></script>
+  <script>
+    const searchClient = algoliasearch('4C6II382QW', '3bc71ecb9e6f31821dfb3b3ab7be69e3');
+    const search = instantsearch({
+      indexName: 'noticias',
+      searchClient,
+    });
+
+    search.addWidgets([
+      instantsearch.widgets.searchBox({
+        container: '#search-input',
+        placeholder: 'Buscar...',
+      }),
+
+      instantsearch.widgets.hits({
+        container: '#search-hits',
+        templates: {
+          item: `
+            <div>
+              <h2>{{{_highlightResult.title.value}}}</h2>
+              <p>{{{_highlightResult.content.value}}}</p>
+              <!-- Agrega otros campos relevantes aquí -->
+            </div>
+          `,
+        },
+      }),
+    ]);
+
+    search.start();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
