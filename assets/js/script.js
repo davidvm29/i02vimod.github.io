@@ -157,10 +157,36 @@ function cargarMenu() {
     }, 2000);
   }
 }
+/* SEARCH */
 
+$(document).ready(function() {
+  // Suponiendo que 'inputBusqueda' es el elemento de entrada de texto del buscador
+var inputBusqueda = document.getElementById('q');
 
-
-
-
-
+inputBusqueda.addEventListener('input', function() {
+  var searchContainer = document.getElementById('search-container');
   
+  // Si hay algo escrito en el campo de búsqueda, mostramos el contenedor
+  if (inputBusqueda.value.trim() !== '') {
+    searchContainer.style.display = 'block';
+  } else {
+    searchContainer.style.display = 'none';
+  }
+});
+
+});
+
+$(document).ready(function () {
+  // Evento de clic en los elementos li dentro de #results-container
+  $("#results-container").on("click", "li", function () {
+      // Obtén el texto del elemento clicado
+      var selectedText = $(this).text();
+      
+      // Establece el valor del input de búsqueda como el texto seleccionado
+      $("#q").val(selectedText);
+      
+      // Limpia los resultados o realiza cualquier otra acción necesaria
+      $("#results-container").empty();
+  });
+});
+

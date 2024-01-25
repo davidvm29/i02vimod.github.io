@@ -1,0 +1,157 @@
+<section id="principal" class="row">
+    <!-- Contenido principal existente... -->
+    <section id="content" class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+      <!-- Contenido principal existente... -->
+    </section>
+
+    <!-- Nuevo contenedor para el calendario -->
+    <section class="content-wrapper col-lg-3 col-md-12 col-sm-12 col-xs-12">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </section>
+  </section>
+
+  <footer id="footer">
+    <!-- Código del pie de página existente... -->
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/calendar.js"></script>
+</body>
+</html>
+css
+Copy code
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  padding: 20px; /* Ajusta el padding según tus necesidades */
+}
+
+
+
+<section id="principal" class="row">
+			
+    <!-- Slider -->
+    <section id="content" class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+    <section class="row" id="content-top">
+                            
+    <div id="breadcrumb" class="breadcrumb-wrap">
+        <div id="ruta">
+                    
+    <a itemprop="item" href="/servicios/actualidad/" class="pathway">Inicio</a>› 											
+    <a itemprop="item" href="/servicios/actualidad/noticiasactualidaddia" class="pathway">noticiasactualidaddia</a>› 													
+    <span itemprop="name">{{page.title}}</span>
+                    </div>
+    </div>
+    
+    </section>
+                        
+    <section id="contenido" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            
+                                <!-- Start K2 Item Layout -->
+    <span id="startOfPageId152586"></span>
+    
+    <div id="k2Container" class="itemView itemIsFeatured">
+        
+        <div class="itemHeader">
+    
+            <!-- Date created -->
+        <span class="itemDateCreated">{{page.fecha}}</span>
+        
+            <!-- Item title -->
+        <h2 class="itemTitle"> {{page.title}} </h2>
+        
+            <!-- Item Author -->
+        <span class="itemAuthor"> Escrito por: {{page.autor}}</span>
+        
+    </div>
+    
+        
+        <div class="itemBody">
+    
+        <figure class="imagen_contenido_noticia">
+            <a data-k2-modal="image" href="/servicios/actualidad/media/k2/items/cache/a8111bab4c62ab7868529ac61cb9bb35_XL.jpg" title="Clic para vista previa de la imagen">
+                <img src="/assets/img/noticia6.jpg" />
+            </a>
+            <figcaption class="pie_contenido_noticia">{{page.pie_foto}}</figcaption>
+        </figure>
+    
+    <!-- Item introtext -->
+    <div class="itemIntroText">
+        {{content}}
+    </div>	
+                    
+    </section>
+    <section class="content-wrapper col-lg-3 col-md-12 col-sm-12 col-xs-12">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </section>
+    </section>
+    
+    
+    <footer id="footer">
+        <div id="footer-bar">
+                <nav class="menu-footer">
+      <a href="/servicios/actualidad/accesibilidad" >Accesibilidad</a> · 
+      <a href="/servicios/actualidad/comunicacion-contacto" >Contacto</a> · 
+      <a href="/servicios/actualidad/mapa-web" >Mapa web</a>
+    </nav>
+            <div id="footer-right">
+                <a href="http://www.uco.es/" id="logo-footer"><img src="https://www.uco.es/servicios/actualidad//templates/uco/images/logo-footer.png" width="50" height="50" alt="Universidad de Córdoba" title="Universidad de Córdoba" /></a>
+                <!-- Redes sociales -->
+                <ul class="redes-sociales">
+            <li><a href="http://www.facebook.com/universidadcordoba" target="_blank" rel="nofollow" class="icon-facebook"></a></li>										
+    <li><a href="http://twitter.com/Univcordoba" target="_blank" rel="nofollow" class="icon-twitter"></a></li>	
+    <li><a href="https://www.instagram.com/universidaddecordoba/" target="_blank" rel="nofollow" class="icon-instagram"></a></li>				
+    <li><a href="http://www.linkedin.com/company/universidad-de-cordoba" target="_blank" rel="nofollow" class="icon-linkedin"></a></li>													
+    <li><a href="http://www.uco.es/servicios/comunicacion/actualidad/?format=feed" target="_blank" rel="nofollow" class="icon-rss"></a></li>														
+    <li><a href="https://www.flickr.com/photos/univcordoba/" target="_blank" rel="nofollow" class="icon-flickr"></a></li>														
+    <li><a href="https://www.youtube.com/user/univcordoba" target="_blank" rel="nofollow" class="icon-youtube"></a></li>																																										
+    <li><a href="https://www.tiktok.com/@universidadcordoba?lang=es" target="_blank" rel="nofollow" class="icon-tiktok"></a></li>
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+    </footer>
+    
+    </body>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/calendar.js"></script>
+    </html>
+      
