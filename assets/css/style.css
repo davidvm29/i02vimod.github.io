@@ -1099,7 +1099,7 @@ header .current-date {
 }
 
 .icon-info {
-  background: url('assets/img/icon-info.png');
+  background: url('img/icon-info.png');
   width: 22.5625px; /* Ajusta el ancho según sea necesario */
   height: 30px; /* Ajusta la altura según sea necesario */
   background-position: 50% 50%;
