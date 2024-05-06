@@ -536,32 +536,32 @@ p {
   cursor: pointer;
 }
 .icon-facebook{
-  background-image: url('/assets/img/asset32.png');
+  background-image: url('assets/img/asset32.png');
 }
 
 .icon-twitter{
- background-image: url('/assets/img/asset\ 33.png');
+ background-image: url('assets/img/asset\ 33.png');
 }
 
 .icon-linkedin{
-  background-image: url('/assets/img/asset\ 34.png');
+  background-image: url('assets/img/asset\ 34.png');
 }
 .icon-rss{
-  background-image: url('/assets/img/asset\ 35.png');
+  background-image: url('assets/img/asset\ 35.png');
 }
 
 .icon-flickr{
-  background-image: url('/assets/img/asset\ 36.png');
+  background-image: url('assets/img/asset\ 36.png');
 }
 
 .icon-youtube{
-  background-image: url('/assets/img/asset\ 37.png');
+  background-image: url('assets/img/asset\ 37.png');
 }
 .icon-instagram{
-  background-image: url('/assets/img/asset\ 38.png');
+  background-image: url('assets/img/asset\ 38.png');
 }
 .icon-tiktok{
-  background-image: url('/assets/img/asset\ 39.png');
+  background-image: url('assets/img/asset\ 39.png');
 }
 
 /*CSS para el menu*/
@@ -608,7 +608,7 @@ p {
       #menu-principal > ul > li:hover > ul{height:auto;opacity:1;border:1px solid #E8E8E8;}
     }
     
-    #menu-button{ font-family: Montserrat,sans-serif !important; text-transform: uppercase; color: #000; cursor: pointer;  text-transform: uppercase;   background: url(../img/asset\ 31.png) right center no-repeat; display: none; }
+    #menu-button{ font-family: Montserrat,sans-serif !important; text-transform: uppercase; color: #000; cursor: pointer;  text-transform: uppercase;   background: url(/img/asset\ 31.png) right center no-repeat; display: none; }
     @media only screen and (max-width:1300px){
       #interes.col-lg-2 .item a span{ font-size: 17px;  }
       #header #titulo {  box-sizing: border-box;  clear: both;  float: none;  margin: auto;  max-width: 95%;  padding: 0;  width: 100%; text-align:center; padding-bottom:20px; }
@@ -637,7 +637,7 @@ p {
       #menu-principal > ul > li ul.open{ display: block !important; opacity: 1 !important;  height: auto; }
       #menu-principal > ul > li > ul.open > li > ul.open{ padding-left: 20px; }
       #menu-principal > ul > li ul{ display: block;  }
-      nav.menu-horizontal > ul > li .submenu-button {  background: url(../img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
+      nav.menu-horizontal > ul > li .submenu-button {  background: url(img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
       nav.menu-horizontal > ul > li > ul > li .submenu-button{ right: 15px; }
       nav.menu-horizontal > ul > li > ul > li >ul > li .submenu-button{ right: 20px; }
       
@@ -647,7 +647,7 @@ p {
       nav.menu-horizontal > ul > li ul.open{ display: block !important; opacity: 1 !important;  height: auto; }
       nav.menu-horizontal > ul > li > ul.open > li > ul.open{ padding-left: 20px; }
       nav.menu-horizontal > ul > li ul{ display: block;  }
-      nav.menu-horizontal > ul > li .submenu-button {  background: url(../img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
+      nav.menu-horizontal > ul > li .submenu-button {  background: url(img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
       nav.menu-horizontal > ul > li > ul > li .submenu-button{ right: 15px; }
       nav.menu-horizontal > ul > li > ul > li >ul > li .submenu-button{ right: 20px; }
       nav.menu-horizontal ul li{ float: none; border-top: solid thin #ccc; width:100%; }
@@ -657,7 +657,7 @@ p {
     nav#menu-principal > ul > li ul.open{ display: block !important; opacity: 1 !important;  height: auto; }
     nav#menu-principal > ul > li > ul.open > li > ul.open{ padding-left: 20px; }
     nav#menu-principal > ul > li ul{ display: block;  }
-    nav#menu-principal > ul > li .submenu-button {  background: url(../img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
+    nav#menu-principal > ul > li .submenu-button {  background: url(img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
     nav#menu-principal > ul > li > ul > li .submenu-button{ right: 15px; }
     nav#menu-principal > ul > li > ul > li >ul > li .submenu-button{ right: 20px; }
     nav#menu-principal ul li{ float: none; border-top: solid thin #ccc; width:100%;height: auto; }
@@ -1099,7 +1099,7 @@ header .current-date {
 }
 
 .icon-info {
-  background: url('/assets/img/icon-info.png');
+  background: url('assets/img/icon-info.png');
   width: 22.5625px; /* Ajusta el ancho según sea necesario */
   height: 30px; /* Ajusta la altura según sea necesario */
   background-position: 50% 50%;
