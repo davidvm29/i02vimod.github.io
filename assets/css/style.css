@@ -637,7 +637,7 @@ p {
       #menu-principal > ul > li ul.open{ display: block !important; opacity: 1 !important;  height: auto; }
       #menu-principal > ul > li > ul.open > li > ul.open{ padding-left: 20px; }
       #menu-principal > ul > li ul{ display: block;  }
-      nav.menu-horizontal > ul > li .submenu-button {  background: url(img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
+      nav.menu-horizontal > ul > li .submenu-button {  background: url(/img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
       nav.menu-horizontal > ul > li > ul > li .submenu-button{ right: 15px; }
       nav.menu-horizontal > ul > li > ul > li >ul > li .submenu-button{ right: 20px; }
       
@@ -647,7 +647,7 @@ p {
       nav.menu-horizontal > ul > li ul.open{ display: block !important; opacity: 1 !important;  height: auto; }
       nav.menu-horizontal > ul > li > ul.open > li > ul.open{ padding-left: 20px; }
       nav.menu-horizontal > ul > li ul{ display: block;  }
-      nav.menu-horizontal > ul > li .submenu-button {  background: url(img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
+      nav.menu-horizontal > ul > li .submenu-button {  background: url(/img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
       nav.menu-horizontal > ul > li > ul > li .submenu-button{ right: 15px; }
       nav.menu-horizontal > ul > li > ul > li >ul > li .submenu-button{ right: 20px; }
       nav.menu-horizontal ul li{ float: none; border-top: solid thin #ccc; width:100%; }
@@ -657,7 +657,7 @@ p {
     nav#menu-principal > ul > li ul.open{ display: block !important; opacity: 1 !important;  height: auto; }
     nav#menu-principal > ul > li > ul.open > li > ul.open{ padding-left: 20px; }
     nav#menu-principal > ul > li ul{ display: block;  }
-    nav#menu-principal > ul > li .submenu-button {  background: url(img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
+    nav#menu-principal > ul > li .submenu-button {  background: url(/img/down.png) top center no-repeat;  display: block;  float: right;  height: 20px; width: 20px; margin-right:22px; background-size: 10px; background-position: 10px 10px; position: absolute; right: 10px; }
     nav#menu-principal > ul > li > ul > li .submenu-button{ right: 15px; }
     nav#menu-principal > ul > li > ul > li >ul > li .submenu-button{ right: 20px; }
     nav#menu-principal ul li{ float: none; border-top: solid thin #ccc; width:100%;height: auto; }
