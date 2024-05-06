@@ -6,6 +6,7 @@
   "dependencies": {
     "algoliasearch": "^4.20.0",
     "instantsearch.js": "^4.60.0",
+    "liquidjs": "^10.10.0",
     "simple-jekyll-search": "^1.10.0"
   },
   "devDependencies": {},

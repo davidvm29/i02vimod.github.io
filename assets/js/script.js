@@ -158,35 +158,31 @@ function cargarMenu() {
   }
 }
 /* SEARCH */
-
-$(document).ready(function() {
-  // Suponiendo que 'inputBusqueda' es el elemento de entrada de texto del buscador
-var inputBusqueda = document.getElementById('q');
-
-inputBusqueda.addEventListener('input', function() {
-  var searchContainer = document.getElementById('search-container');
-  
-  // Si hay algo escrito en el campo de búsqueda, mostramos el contenedor
-  if (inputBusqueda.value.trim() !== '') {
-    searchContainer.style.display = 'block';
-  } else {
-    searchContainer.style.display = 'none';
+function buscarYRedirigir(idioma) {
+  var searchTerm = document.getElementById('q').value;
+  // Realizar la búsqueda con el término searchTerm
+  // Aquí puedes ejecutar el código de búsqueda que tienes, o cualquier otra lógica de búsqueda que prefieras
+  // Después de obtener los resultados, los almacenamos en la caché del navegador
+  var results = obtenerResultadosDeBusqueda(searchTerm);
+  localStorage.setItem('searchResults', JSON.stringify(results));
+  // Redireccionar a la página de búsqueda
+  if(idioma==="es"){
+    window.location.href = "/search.html";
+  }else{
+    window.location.href = "/search_en.html";
   }
-});
+}
 
-});
-
-$(document).ready(function () {
-  // Evento de clic en los elementos li dentro de #results-container
-  $("#results-container").on("click", "li", function () {
-      // Obtén el texto del elemento clicado
-      var selectedText = $(this).text();
-      
-      // Establece el valor del input de búsqueda como el texto seleccionado
-      $("#q").val(selectedText);
-      
-      // Limpia los resultados o realiza cualquier otra acción necesaria
-      $("#results-container").empty();
-  });
-});
-
+function obtenerResultadosDeBusqueda(searchTerm) {
+  // Esta función debe obtener los resultados de búsqueda de tu contenedor
+  var results = [];
+  var listItems = document.getElementById('results-container').getElementsByTagName('li');
+  for (var i = 0; i < listItems.length; i++) {
+      var listItem = listItems[i];
+      results.push({
+          title: listItem.textContent,
+          url: listItem.querySelector('a').getAttribute('href')
+      });
+  }
+  return results;
+} 

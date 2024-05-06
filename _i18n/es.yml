@@ -12,6 +12,7 @@ gerencia: Gerencia
 asesoria_juridica: Asesoría Jurídica
 defensoria_universitaria: Defensoría Universitaria
 consejo_social: Consejo Social
+consejo_estudiantes: "Consejo de Estudiantes"
 gestion_administrativa: Gestión administrativa
 normativa: Normativa
 centros_departamentos: Centros, campus y departamentos
@@ -86,7 +87,7 @@ biblioteca: Biblioteca
 calidad: Calidad
 contratacion_patrimonio: Contratación y Patrimonio
 ucocultura: UCOCultura
-deporte: Deporte
+deporte: Deportes
 gabinete_comunicacion: Gabinete de Comunicación
 ucoidiomas: UCOidiomas
 igualdad: Igualdad
@@ -126,3 +127,46 @@ buscar_personas: "Buscar Personas"
 correo: "Correo"
 sistema_integridad_uco: "Sistema de Integridad UCO"
 proteccion_datos: "Protección de Datos"
+inicio: Inicio
+vida_academica: "Vida Académica"
+ciencia: "ciencia"
+institucional: "Institucional"
+becas: "Becas y Empleo"
+emprendimiento: "Emprendimiento"
+cultura: "Cultura"
+vida_universitaria: "Vida Universitaria"
+escrito: "Escrito por"
+informacion_adicional: "INFORMACIÓN ADICIONAL"
+fecha_modificada: "Modificado por última vez en"
+comparte: "Comparte en"
+articulos_relacionados: "Artículos relacionados (por etiqueta)"
+informacion_linea: "INFORMACIÓN EN LÍNEA"
+volver_arriba: "Volver arriba"
+mas_categoria: "Más en esta categoría:"
+servicios_recursos: "SERVICIOS Y RECURSOS COMUNES DE LA UNIVERSIDAD DE CÓRDOBA"
+convocatorias: "CONVOCATORIAS ABIERTAS"
+convocatoria1: "» III Congreso Internacional ¡Nosotros Proponemos! Ciudadanía, sostenibilidad e innovación en la educación (Ciudad Real, 17 - 20 abril de 2024)"
+mas_info: "Más información en la web ..."
+leer_mas: "» Leer más..."
+convocatoria2: "» 8ª Jornadas Red Española de Compostaje (2 -4 octubre de 2024)"
+info_general: "Información general de las jornadas en"
+inscripciones: "Inscripciones"
+convocatoria3: "» Área de Cooperación y Solidaridad: iniciativa para ofrecer a la comunidad universitaria de la UCO la posibilidad de solicitar ayuda económica para la organización de acciones de formación y/o sensibilización vinculadas a la situación derivada del conflict"
+convocatoria4_1: "Para hacer una propuesta es preciso rellenar el siguiente "
+convocatoria4_2: "Ayudas financiadas por las subvenciones del Ministerio..."
+formulario: "FORMULARIO"
+boletin: "BOLETÍN DE NOVEDADES"
+congresos: "CONGRESOS"
+uco_medios: "LA UCO EN LOS MEDIOS"
+imagen_corporativa: "IMAGEN CORPORATIVA"
+enlaces: "ENLACES"
+suscribete: "SUSCRÍBETE A NOVEDADES"
+hemeroteca: "HEMEROTECA"
+galeria_imagenes: "GALERÍA DE IMÁGENES"
+carta_servicios: "CARTA DE SERVICIOS"
+quienes_somos: "QUIENES SOMOS"
+buzon_quejas: "BUZÓN DE QUEJAS, SUGERENCIAS Y FELICITACIONES"
+consultas_accesibilidad: "CONSULTAS SOBRE ACCESIBILIDAD"
+cita_previa: "Solicitar cita previa"
+estudios_postgrado: "Instituto de Estudios de Posgrado"
+resultados_busqueda: "Resultados de la búsqueda"
