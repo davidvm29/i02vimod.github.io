@@ -540,28 +540,28 @@ p {
 }
 
 .icon-twitter{
- background-image: url('assets/img/asset\ 33.png');
+ background-image: url('../img/asset\ 33.png');
 }
 
 .icon-linkedin{
-  background-image: url('assets/img/asset\ 34.png');
+  background-image: url('../img/asset\ 34.png');
 }
 .icon-rss{
-  background-image: url('assets/img/asset\ 35.png');
+  background-image: url('../img/asset\ 35.png');
 }
 
 .icon-flickr{
-  background-image: url('assets/img/asset\ 36.png');
+  background-image: url('../img/asset\ 36.png');
 }
 
 .icon-youtube{
-  background-image: url('assets/img/asset\ 37.png');
+  background-image: url('../img/asset\ 37.png');
 }
 .icon-instagram{
-  background-image: url('assets/img/asset\ 38.png');
+  background-image: url('../img/asset\ 38.png');
 }
 .icon-tiktok{
-  background-image: url('assets/img/asset\ 39.png');
+  background-image: url('../img/asset\ 39.png');
 }
 
 /*CSS para el menu*/
