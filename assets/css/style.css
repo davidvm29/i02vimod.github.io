@@ -536,7 +536,7 @@ p {
   cursor: pointer;
 }
 .icon-facebook{
-  background-image: url('assets/img/asset32.png');
+  background-image: url('../img/asset32.png');
 }
 
 .icon-twitter{
